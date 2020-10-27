@@ -2,3 +2,10 @@
 @import "components/header.css";
 @import "screens/main.css";
 @import "variable.css";
+@import "components/NavigationBar.css";
+@import "screens/friends.css";
+@import "screens/screenHeader.css";
+
+body{
+    color: #2e363e;
+}
