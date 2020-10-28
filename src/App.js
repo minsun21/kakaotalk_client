@@ -4,9 +4,11 @@ import {
   Route,
 } from "react-router-dom";
 
-import Header from './header/Header';
-import Main from './main/Main';
-import Friends from './friends/Friends';
+import Header from './components/Header';
+import Main from './screens/Main';
+import Friends from './screens/friends/Friends';
+import Chats from './screens/Chats';
+import NavigationBar from './components/NavigationBar';
 
 function App() {
   return (
@@ -14,9 +16,11 @@ function App() {
       <div>
         <Header />
         <Switch>
+          <Route exact path="/chats" component={Chats} />
           <Route exact path="/friends" component={Friends} />
           <Route exact path="/" component={Main} />
         </Switch>
+        <NavigationBar />
       </div>
     </Router>
   );

@@ -12,8 +12,8 @@ function NavigationBar() {
                         <i class="fas fa-user fa-lg" /></Link>
                 </li>
                 <li className="nav__btn">
-                    <Link className="nav__a" to="">
-                        <span className="nav__notification">1</span>
+                    <Link className="nav__a" to="/chats">
+                        <span className="nav__notification badge">1</span>
                         <i class="far fa-comment fa-lg" /></Link>
                 </li>
                 <li className="nav__btn">

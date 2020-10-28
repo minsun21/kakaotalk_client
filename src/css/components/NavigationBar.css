@@ -3,7 +3,7 @@
     bottom: 0;
     width: 100%;
     background-color: #f9f9fa;
-    padding: 20px 40px;
+    padding: 30px 40px;
     border-top: 1px solid rgba(121,121,121,0.2);
 }
 
@@ -17,20 +17,12 @@
 }
 
 .nav__notification{
-    background-color: red;
-    width: 15px;
-    height: 15px;
-    border-radius: 7.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    font-size: 10px;
-    font-weight: 600;
     position: absolute;
     left: 15px;
     bottom:10px;
     z-index: 1;
+    width: 15px;
+    height: 15px;
 }
 
 .nav__ellipsis{

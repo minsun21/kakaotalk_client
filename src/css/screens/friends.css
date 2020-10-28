@@ -4,8 +4,30 @@
     background-color: #fafafa;
     padding:15px 0px;
     font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 #firends-display-link i{
-    color: rgba(0,0,0,0.3);
+    color: rgba(179, 135, 135, 0.3);
+    margin-right: 5px;
+}
+
+
+/** CHANNEL*/
+.user-component__title--not-bold{
+    font-weight: 500;
+}
+
+.firends-screen__channel{
+    margin-top: 25px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding-top:15px;
+}
+
+.firends_screen__channel-header{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0,0,0,0.5);
 }
