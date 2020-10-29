@@ -17,7 +17,7 @@ function NavigationBar() {
                         <i class="far fa-comment fa-lg" /></Link>
                 </li>
                 <li className="nav__btn">
-                    <Link className="nav__a" to="">
+                    <Link className="nav__a" to="/find">
                         <i class="fas fa-search fa-lg" /></Link>
                 </li>
                 <li className="nav__btn">

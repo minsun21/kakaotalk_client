@@ -8,6 +8,7 @@
 @import "screens/chats.css";
 @import "components/user.css";
 @import "components/badge.css";
+@import "screens/find.css";
 
 body{
     color: #2e363e;
