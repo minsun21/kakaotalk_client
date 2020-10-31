@@ -3,14 +3,14 @@ import ScreenHeader from '../components/screen-header';
 
 function Find() {
     return (
-        <div className="main-screen">
+        <>
             <ScreenHeader screen='Find' />
             <div className="screen__main">
-                <div className="find__icons">
-                    <div className="find-icons__icon"><i class="fas fa-qrcode " /><span>QR Code</span></div>
-                    <div className="find-icons__icon"><i class="far fa-address-book" /><span>Add by Contacts</span></div>
-                    <div className="find-icons__icon"><i class="fas fa-fingerprint" /><span>Add by ID</span></div>
-                    <div className="find-icons__icon"><i class="far fa-envelope" /><span>Invite</span></div>
+                <div className="icon-row">
+                    <div className="icon-row__icon"><i class="fas fa-qrcode " /><span>QR Code</span></div>
+                    <div className="icon-row__icon"><i class="far fa-address-book" /><span>Add by Contacts</span></div>
+                    <div className="icon-row__icon"><i class="fas fa-fingerprint" /><span>Add by ID</span></div>
+                    <div className="icon-row__icon"><i class="far fa-envelope" /><span>Invite</span></div>
                 </div>
                 <div className="recommended-friends">
                     <h6 className="recommended-friends__title">Recommended Friends</h6>
@@ -63,7 +63,7 @@ function Find() {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

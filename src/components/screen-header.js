@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 function ScreenHeader({ screen }) {
     const renderIcons = () => {
@@ -11,14 +12,14 @@ function ScreenHeader({ screen }) {
                 return (<><span> <i class="fas fa-search" /></span>
                     <span><i class="fas fa-comment-medical" /></span>
                     <span><i class="fas fa-music" /></span>
-                    <span><i className="fas fa-cog" /></span></>);
+                    <span><Link to="/setting"><div className="nav__ellipsis" /><i class="fas fa-cog" /></Link></span></>);
             case 'Find':
                 return (<><span> <i class="fas fa-search" /></span>
-                    <span><div className="nav__ellipsis" /><i class="fas fa-cog" /></span></>);
+                    <span><Link to="/setting"><div className="nav__ellipsis" /><i class="fas fa-cog" /></Link></span></>);
             case 'More':
                 return (<><span> <i class="fas fa-search" /></span>
                     <span><i class="fas fa-music" /></span>
-                    <span><div className="nav__ellipsis" /><i class="fas fa-cog" /></span></>);
+                    <span><Link to="/setting"><div className="nav__ellipsis" /><i class="fas fa-cog" /></Link></span></>);
             default:
                 break;
         }

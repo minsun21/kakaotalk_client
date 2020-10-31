@@ -21,7 +21,7 @@ function NavigationBar() {
                         <i class="fas fa-search fa-lg" /></Link>
                 </li>
                 <li className="nav__btn">
-                    <Link className="nav__a" to="">
+                    <Link className="nav__a" to="/more">
                         <div className="nav__ellipsis" />
                         <i class="fas fa-ellipsis-h fa-lg" /></Link>
                 </li>

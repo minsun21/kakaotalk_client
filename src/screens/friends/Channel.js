@@ -1,4 +1,3 @@
-
 function Channel({ img, name }) {
     return (
         <div className="firends-screen__channel">

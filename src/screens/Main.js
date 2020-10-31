@@ -6,7 +6,7 @@ function Main(props) {
         props.history.push('/friends');
     }
     return (
-        <div className="Login">
+        <div className="main">
             <header className="welcome-header">
                 <h1 className="welcome-header__title">Welcome to Kakao Talk</h1>
                 <p className="welcome-header__text">If you have a Kakao Account, log in with your email or phone number.</p>
