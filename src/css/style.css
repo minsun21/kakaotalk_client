@@ -6,16 +6,16 @@
 @import "screens/screenHeader.css";
 @import "screens/friends.css";
 @import "components/user.css";
-
-/* 
-@import "screens/chats.css";
-@import "components/badge.css";
 @import "screens/find.css";
 @import "components/icon-row.css";
+
+@import "screens/chats.css";
+@import "components/badge.css";
+
 @import "screens/more.css";
 @import "components/alt-screen-header.css";
 @import "screens/setting.css";
-@import "screens/chat.css"; */
+@import "screens/chat.css";
 
 
 body{

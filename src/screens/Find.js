@@ -1,5 +1,25 @@
 import React from 'react'
 import ScreenHeader from '../components/screen-header';
+import OpenPost from './find/OpenPost';
+import NavigationBar from '../components/NavigationBar';
+
+const openpost = [{
+    title: '#News',
+    hashtag: '#news#friends',
+    membersImg: 'https://images.unsplash.com/photo-1603883469847-20fc79700ff9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+    memberCount: '800',
+    status: 'Active',
+    photoImg: 'https://images.unsplash.com/photo-1603939041129-6a1ebe95d213?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+    heart: '326'
+}, {
+    title: '#News2',
+    hashtag: '#news#friends',
+    membersImg: 'https://images.unsplash.com/photo-1603883469847-20fc79700ff9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+    memberCount: '800',
+    status: 'Active',
+    photoImg: 'https://images.unsplash.com/photo-1603939041129-6a1ebe95d213?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+    heart: '326'
+}]
 
 function Find() {
     return (
@@ -20,49 +40,11 @@ function Find() {
                     <div className="open-chat__header"><h4 className="open-chat__title">Open Chat</h4>
                         <span>Go to Openchat Home<i className="fas fa-chevron-right fa-xs" /></span></div>
                 </div>
-                <div className="open-post">
-                    <div className="open-post__column">
-                        <h5 className="open-post__title">#News</h5>
-                        <h6 className="open-post__hashtags">#news#friends</h6>
-                        <div className="open-post__members">
-                            <img src="https://images.unsplash.com/photo-1603883469847-20fc79700ff9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="open-post" />
-                            <span className="open-post__member-count">800 members</span>
-                            <div className="divider"></div>
-                            <span className="open-post__member-status">Active</span>
-                        </div>
-                    </div>
-                    <div className="open-post__column">
-                        <div className="open-post__photo">
-                            <img src="https://images.unsplash.com/photo-1603939041129-6a1ebe95d213?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="open-post" />
-
-                            <div className="open-post__heart-count">
-                                <i class="fas fa-heart fa-xs" /><span>326</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="open-post">
-                    <div className="open-post__column">
-                        <h5 className="open-post__title">#News</h5>
-                        <h6 className="open-post__hashtags">#news#friends</h6>
-                        <div className="open-post__members">
-                            <img src="https://images.unsplash.com/photo-1603883469847-20fc79700ff9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="open-post" />
-                            <span className="open-post__member-count">800 members</span>
-                            <div className="divider"></div>
-                            <span className="open-post__member-status">Active</span>
-                        </div>
-                    </div>
-                    <div className="open-post__column">
-                        <div className="open-post__photo">
-                            <img src="https://images.unsplash.com/photo-1603939041129-6a1ebe95d213?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="open-post" />
-
-                            <div className="open-post__heart-count">
-                                <i class="fas fa-heart fa-xs" /><span>326</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {openpost.map(post => {
+                    return <OpenPost key={post.title} PostInfo={post} />
+                })}
             </div>
+            <NavigationBar page="find" />
         </>
     )
 }

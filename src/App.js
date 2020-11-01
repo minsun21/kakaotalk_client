@@ -33,7 +33,6 @@ function App() {
             <Route exact path="/" component={Main} />
           </Switch>
         </div>
-        <NavigationBar />
       </div>
     </Router>
   );

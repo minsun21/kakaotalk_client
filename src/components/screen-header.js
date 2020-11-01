@@ -7,17 +7,17 @@ function ScreenHeader({ screen }) {
             case 'Friends':
                 return (<><span> <i class="fas fa-search" /></span>
                     <span><i class="fas fa-music" /></span>
-                    <span><i class="fas fa-cog" /></span></>);
+                    <span><Link to="/setting"><div className="nav__ellipsis" /><i class="fas fa-cog" /></Link></span></>);
             case 'Chats':
-                return (<><span> <i class="fas fa-search" /></span>
+                return (<><span> <Link to="/find"><i class="fas fa-search" /></Link></span>
                     <span><i class="fas fa-comment-medical" /></span>
                     <span><i class="fas fa-music" /></span>
                     <span><Link to="/setting"><div className="nav__ellipsis" /><i class="fas fa-cog" /></Link></span></>);
             case 'Find':
-                return (<><span> <i class="fas fa-search" /></span>
+                return (<><span> <Link to="/find"><i class="fas fa-search" /></Link></span>
                     <span><Link to="/setting"><div className="nav__ellipsis" /><i class="fas fa-cog" /></Link></span></>);
             case 'More':
-                return (<><span> <i class="fas fa-search" /></span>
+                return (<><span><Link to="/find"><i class="fas fa-search" /></Link></span>
                     <span><i class="fas fa-music" /></span>
                     <span><Link to="/setting"><div className="nav__ellipsis" /><i class="fas fa-cog" /></Link></span></>);
             default:

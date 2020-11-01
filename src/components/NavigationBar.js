@@ -1,28 +1,28 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-function NavigationBar() {
-    //<i class="far fa-user"></i>
-    //<i class="fas fa-comment"></i>
+function NavigationBar({ page }) {
+    //</i>
+    //</i>
     return (
         <nav className="nav">
             <ul className="nav__ul">
                 <li className="nav__btn">
                     <Link className="nav__a" to="/friends">
-                        <i class="fas fa-user fa-lg" /></Link>
+                        {page === 'friends' ? <i class="fas fa-user fa-lg" /> : <i class="far fa-user fa-lg" />}</Link>
                 </li>
                 <li className="nav__btn">
                     <Link className="nav__a" to="/chats">
                         <span className="nav__notification badge">1</span>
-                        <i class="far fa-comment fa-lg" /></Link>
+                        {page === 'chats' ? <i class="fas fa-comment fa-lg" /> : <i class="far fa-comment fa-lg" />}</Link>
                 </li>
                 <li className="nav__btn">
                     <Link className="nav__a" to="/find">
-                        <i class="fas fa-search fa-lg" /></Link>
+                        {page === 'chats' ? <i class="fas fa-search fa-lg" /> : <i class="fas fa-search-plus fa-lg" />}</Link>
                 </li>
                 <li className="nav__btn">
                     <Link className="nav__a" to="/more">
-                        <div className="nav__ellipsis" />
+                        {page === 'more' ? null : <div className="nav__ellipsis" />}
                         <i class="fas fa-ellipsis-h fa-lg" /></Link>
                 </li>
             </ul>
